@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#game{
+  width: 500px;
+  height: 200px;
+  border: 2px solid;
+
+}
+#character{
+  
+  background-image: url(Chrome_Dino.webp);
+  background-size: cover;
+  width: 45px;
+  height: 50px;
+  position: relative;
+  top: 150px;
+
+}
+  .animate{
+  animation: jump 500ms;
+  }
+  
+#block{
+  width: 30px;
+  height: 30px;
+  background-image: url(4-original.png);
+  background-size: cover;
+  position: relative;
+  top: 120px;
+  left: 480px;
+  animation: block 1s infinite linear;
+}
+@keyframes jump{
+  0%{top: 150px;}
+  50%{top: 100px;}
+  100%{top: 150px;}
+}
+@keyframes block{
+  0%{left: 480px;}
+  100%{left:-480px;}
+}
